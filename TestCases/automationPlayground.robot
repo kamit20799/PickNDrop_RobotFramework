@@ -1,5 +1,5 @@
 *** Settings ***
-Library    SeleniumLibrary
+Library    SeleniumLibrary    timeout = .2seconds;
 
 *** Variables ***
 ${url}            https://automationplayground.com/crm/
@@ -48,4 +48,7 @@ should be able to add new coustomer
     Select Checkbox        promos-name
     Click Button    Submit
 
-    Page Should Contain    Success
+    Wait Until Page Contains    Success
+
+    Sleep    3s
+    Close Browser
