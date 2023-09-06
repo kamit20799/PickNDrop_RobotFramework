@@ -41,3 +41,15 @@ Checkout- Complete
     Page Should Contain    Thank you for your order!
 Close My Browser
     Log    temp
+
+Inseting Test Data
+    log     1
+
+Beign Test Data
+    Log    2
+
+End Web Test
+    log     3
+
+Cleanup Testing Data
+    Log    4

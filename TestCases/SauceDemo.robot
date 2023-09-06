@@ -1,6 +1,10 @@
 *** Settings ***
 Library    SeleniumLibrary    timeout=0.3seconds
-Resource    ../Resources/Amazon_Keywords.robot 
+Resource    ../Resources/SauceDemo_Keywords.robot
+Suite Setup        Inseting Test Data
+Test Setup        Beign Test Data
+Test Teardown        End Web Test
+Suite Teardown    Cleanup Testing Data
 
 *** Variables ***
 

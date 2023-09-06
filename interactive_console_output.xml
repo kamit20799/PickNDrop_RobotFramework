@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1.1 (Python 3.9.13 on win32)" generated="20230905 15:58:24.537" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1.1 (Python 3.9.13 on win32)" generated="20230906 00:59:06.965" rpa="false" schemaversion="4">
 <suite id="s1" name="Robot Interactive Console" source="c:\Users\kamit\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
 <test id="s1-t1" name="Default Task/Test" line="5">
 <kw name="Interpreter Main Loop" library="MainLoop">
-<kw name="Open Browser">
-<arg>about:blank</arg>
-<arg>chrome</arg>
-<msg timestamp="20230905 15:58:26.268" level="FAIL">No keyword with name 'Open Browser' found.</msg>
-<status status="FAIL" starttime="20230905 15:58:26.262" endtime="20230905 15:58:26.268"/>
+<status status="PASS" starttime="20230906 00:59:07.002" endtime="20230906 00:59:09.339"/>
 </kw>
-<kw name="Maximize Browser Window">
-<status status="NOT RUN" starttime="20230905 15:58:26.270" endtime="20230905 15:58:26.270"/>
-</kw>
-<status status="PASS" starttime="20230905 15:58:24.740" endtime="20230905 15:58:29.298"/>
-</kw>
-<status status="PASS" starttime="20230905 15:58:24.740" endtime="20230905 15:58:29.298"/>
+<status status="PASS" starttime="20230906 00:59:07.002" endtime="20230906 00:59:09.339"/>
 </test>
-<status status="PASS" starttime="20230905 15:58:24.538" endtime="20230905 15:58:29.298"/>
+<status status="PASS" starttime="20230906 00:59:06.968" endtime="20230906 00:59:09.341"/>
 </suite>
 <statistics>
 <total>
