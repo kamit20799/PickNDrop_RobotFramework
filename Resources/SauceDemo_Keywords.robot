@@ -17,7 +17,7 @@ Login
 
 Add Product to Cart
     Click Button    add-to-cart-sauce-labs-backpack
-    Click Button    add-to-cart-sauce-labs-fleece-jacket
+    Click Button    add-to-cart-sauce-labs-onesie
     Wait Until Page Contains    Remove
     Sleep    3seconds
 
@@ -39,17 +39,16 @@ Checkout- Overview
 
 Checkout- Complete
     Page Should Contain    Thank you for your order!
-Close My Browser
-    Log    temp
+End Web Test
+    Close Browser
+
+
 
 Inseting Test Data
     log     1
 
 Beign Test Data
     Log    2
-
-End Web Test
-    log     3
 
 Cleanup Testing Data
     Log    4
