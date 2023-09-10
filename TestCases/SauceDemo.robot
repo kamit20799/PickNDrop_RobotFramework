@@ -1,16 +1,14 @@
 *** Settings ***
 Library    SeleniumLibrary    timeout=0.3seconds
 Resource    ../Resources/SauceDemo_Keywords.robot
-# Suite Setup        Inseting Test Data
-Test Setup            Begin Testing
-Test Teardown         End Web Test
-# Suite Teardown    Cleanup Testing Data
+Suite Setup           Inseting Test Data        #This test suite
+Test Setup            Begin Testing             #opens browser, etc.
+Test Teardown         End Web Test              #close browser
+Suite Teardown        Cleanup Testing Data      #This is suite tear-down
 
 *** Variables ***
 
 *** Test Cases ***
-# User must visit to the Website
-#     Begin Testing
 
 User can login to the website
     Login

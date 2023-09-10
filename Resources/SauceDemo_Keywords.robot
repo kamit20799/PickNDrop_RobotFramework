@@ -7,8 +7,7 @@ Begin Testing
     Maximize Browser Window
     Sleep    3seconds
 
-Login
-    Go To    https://www.saucedemo.com/
+Login    Go To    https://www.saucedemo.com/
     Input Text    user-name    standard_user
     Input Text    password    secret_sauce
     Click Element    login-button
@@ -42,13 +41,8 @@ Checkout- Complete
 End Web Test
     Close Browser
 
-
-
 Inseting Test Data
-    log     1
-
-Beign Test Data
-    Log    2
+    log     This test suite
 
 Cleanup Testing Data
-    Log    4
+    Log    This is suite tear-down
