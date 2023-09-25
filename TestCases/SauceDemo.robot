@@ -1,6 +1,8 @@
 *** Settings ***
 Library    SeleniumLibrary    timeout=0.3seconds
 Resource    ../Resources/SauceDemo_Keywords.robot
+Resource    ../Resources/Sauce2Demo_Keywords.robot
+
 Suite Setup           Inseting Test Data        #This test suite
 Test Setup            Begin Testing             #opens browser, etc.
 Test Teardown         End Web Test              #close browser
@@ -15,20 +17,24 @@ User can login to the website
 
 User can add products to the Product
     Login
-    Add Product to Cart
+    SauceDemo_Keywords.Add Product to Cart
 
-# User can check the Product
-#     Begin Checkout
+User can add products to the Product
+    Login
+    Sauce2Demo_Keywords.Add Product to Cart
 
-# User can fill their address
-#     Checkout- Your Information
+User can check the Product
+    Begin Checkout
 
-# User can the Purchase Summary
-#     Checkout- Overview
+User can fill their address
+    Checkout- Your Information
+
+User can the Purchase Summary
+    Checkout- Overview
 
 
-# Order Summary
-#     Checkout- Complete
+Order Summary
+    Checkout- Complete
 
 
 

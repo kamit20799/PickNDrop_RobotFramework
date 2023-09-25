@@ -1,202 +1,317 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230910 16:08:55.399" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.9.13 on win32)" generated="20230910 16:27:54.217" rpa="false" schemaversion="3">
 <suite id="s1" name="Saucedemo" source="g:\Robot Framework\PickNDrop_RobotFramework\testcases\saucedemo.robot">
 <kw name="Inseting Test Data" library="SauceDemo_Keywords" type="SETUP">
 <kw name="Log" library="BuiltIn">
 <arg>This test suite</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230910 16:08:55.663" level="INFO">This test suite</msg>
-<status status="PASS" starttime="20230910 16:08:55.663" endtime="20230910 16:08:55.663"/>
+<msg timestamp="20230910 16:27:54.536" level="INFO">This test suite</msg>
+<status status="PASS" starttime="20230910 16:27:54.536" endtime="20230910 16:27:54.536"/>
 </kw>
-<status status="PASS" starttime="20230910 16:08:55.663" endtime="20230910 16:08:55.663"/>
+<status status="PASS" starttime="20230910 16:27:54.536" endtime="20230910 16:27:54.551"/>
 </kw>
-<test id="s1-t1" name="User can login to the website" line="13">
+<test id="s1-t1" name="User can login to the website" line="15">
 <kw name="Begin Testing" library="SauceDemo_Keywords" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230910 16:08:55.679" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20230910 16:08:55.679" endtime="20230910 16:08:59.537"/>
+<msg timestamp="20230910 16:27:54.555" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20230910 16:27:54.555" endtime="20230910 16:27:56.398"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230910 16:08:59.537" endtime="20230910 16:08:59.654"/>
+<status status="PASS" starttime="20230910 16:27:56.398" endtime="20230910 16:27:56.520"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230910 16:09:02.656" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230910 16:08:59.654" endtime="20230910 16:09:02.656"/>
+<msg timestamp="20230910 16:27:59.525" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230910 16:27:56.520" endtime="20230910 16:27:59.525"/>
 </kw>
-<status status="PASS" starttime="20230910 16:08:55.679" endtime="20230910 16:09:02.656"/>
+<status status="PASS" starttime="20230910 16:27:54.555" endtime="20230910 16:27:59.525"/>
 </kw>
 <kw name="Login" library="SauceDemo_Keywords">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://www.saucedemo.com/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230910 16:09:02.656" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
-<status status="PASS" starttime="20230910 16:09:02.656" endtime="20230910 16:09:03.722"/>
+<msg timestamp="20230910 16:27:59.525" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<status status="PASS" starttime="20230910 16:27:59.525" endtime="20230910 16:28:03.036"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>user-name</arg>
 <arg>standard_user</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230910 16:09:03.722" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
-<status status="PASS" starttime="20230910 16:09:03.722" endtime="20230910 16:09:03.881"/>
+<msg timestamp="20230910 16:28:03.055" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20230910 16:28:03.036" endtime="20230910 16:28:03.172"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>password</arg>
 <arg>secret_sauce</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230910 16:09:03.881" level="INFO">Typing text 'secret_sauce' into text field 'password'.</msg>
-<status status="PASS" starttime="20230910 16:09:03.881" endtime="20230910 16:09:03.979"/>
+<msg timestamp="20230910 16:28:03.172" level="INFO">Typing text 'secret_sauce' into text field 'password'.</msg>
+<status status="PASS" starttime="20230910 16:28:03.172" endtime="20230910 16:28:03.268"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230910 16:09:03.979" level="INFO">Clicking element 'login-button'.</msg>
-<status status="PASS" starttime="20230910 16:09:03.979" endtime="20230910 16:09:04.089"/>
+<msg timestamp="20230910 16:28:03.268" level="INFO">Clicking element 'login-button'.</msg>
+<status status="PASS" starttime="20230910 16:28:03.268" endtime="20230910 16:28:03.362"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Swag Labs</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230910 16:09:04.089" endtime="20230910 16:09:04.103"/>
+<status status="PASS" starttime="20230910 16:28:03.362" endtime="20230910 16:28:03.377"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230910 16:09:07.105" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230910 16:09:04.103" endtime="20230910 16:09:07.105"/>
+<msg timestamp="20230910 16:28:06.388" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230910 16:28:03.377" endtime="20230910 16:28:06.388"/>
 </kw>
-<status status="PASS" starttime="20230910 16:09:02.656" endtime="20230910 16:09:07.105"/>
+<status status="PASS" starttime="20230910 16:27:59.525" endtime="20230910 16:28:06.388"/>
 </kw>
 <kw name="End Web Test" library="SauceDemo_Keywords" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230910 16:09:07.105" endtime="20230910 16:09:09.276"/>
+<status status="PASS" starttime="20230910 16:28:06.388" endtime="20230910 16:28:08.637"/>
 </kw>
-<status status="PASS" starttime="20230910 16:09:07.105" endtime="20230910 16:09:09.276"/>
+<status status="PASS" starttime="20230910 16:28:06.388" endtime="20230910 16:28:08.637"/>
 </kw>
-<status status="PASS" starttime="20230910 16:08:55.679" endtime="20230910 16:09:09.276"/>
+<status status="PASS" starttime="20230910 16:27:54.552" endtime="20230910 16:28:08.637"/>
 </test>
-<test id="s1-t2" name="User can add products to the Product" line="16">
+<test id="s1-t2" name="User can add products to the Product" line="18">
 <kw name="Begin Testing" library="SauceDemo_Keywords" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:blank</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230910 16:09:09.276" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20230910 16:09:09.276" endtime="20230910 16:09:10.832"/>
+<msg timestamp="20230910 16:28:08.637" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20230910 16:28:08.637" endtime="20230910 16:28:10.208"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230910 16:09:10.832" endtime="20230910 16:09:10.948"/>
+<status status="PASS" starttime="20230910 16:28:10.208" endtime="20230910 16:28:10.331"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230910 16:09:13.958" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230910 16:09:10.949" endtime="20230910 16:09:13.958"/>
+<msg timestamp="20230910 16:28:13.339" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230910 16:28:10.331" endtime="20230910 16:28:13.339"/>
 </kw>
-<status status="PASS" starttime="20230910 16:09:09.276" endtime="20230910 16:09:13.958"/>
+<status status="PASS" starttime="20230910 16:28:08.637" endtime="20230910 16:28:13.339"/>
 </kw>
 <kw name="Login" library="SauceDemo_Keywords">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://www.saucedemo.com/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20230910 16:09:13.958" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
-<status status="PASS" starttime="20230910 16:09:13.958" endtime="20230910 16:09:14.894"/>
+<msg timestamp="20230910 16:28:13.339" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<status status="PASS" starttime="20230910 16:28:13.339" endtime="20230910 16:28:15.422"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>user-name</arg>
 <arg>standard_user</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230910 16:09:14.894" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
-<status status="PASS" starttime="20230910 16:09:14.894" endtime="20230910 16:09:15.023"/>
+<msg timestamp="20230910 16:28:15.422" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20230910 16:28:15.422" endtime="20230910 16:28:15.546"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>password</arg>
 <arg>secret_sauce</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230910 16:09:15.023" level="INFO">Typing text 'secret_sauce' into text field 'password'.</msg>
-<status status="PASS" starttime="20230910 16:09:15.023" endtime="20230910 16:09:15.122"/>
+<msg timestamp="20230910 16:28:15.548" level="INFO">Typing text 'secret_sauce' into text field 'password'.</msg>
+<status status="PASS" starttime="20230910 16:28:15.546" endtime="20230910 16:28:15.636"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>login-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230910 16:09:15.122" level="INFO">Clicking element 'login-button'.</msg>
-<status status="PASS" starttime="20230910 16:09:15.122" endtime="20230910 16:09:15.221"/>
+<msg timestamp="20230910 16:28:15.636" level="INFO">Clicking element 'login-button'.</msg>
+<status status="PASS" starttime="20230910 16:28:15.636" endtime="20230910 16:28:15.733"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Swag Labs</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230910 16:09:15.221" endtime="20230910 16:09:15.243"/>
+<status status="PASS" starttime="20230910 16:28:15.733" endtime="20230910 16:28:15.748"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230910 16:09:18.245" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230910 16:09:15.243" endtime="20230910 16:09:18.245"/>
+<msg timestamp="20230910 16:28:18.756" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230910 16:28:15.748" endtime="20230910 16:28:18.756"/>
 </kw>
-<status status="PASS" starttime="20230910 16:09:13.958" endtime="20230910 16:09:18.245"/>
+<status status="PASS" starttime="20230910 16:28:13.339" endtime="20230910 16:28:18.756"/>
 </kw>
 <kw name="Add Product to Cart" library="SauceDemo_Keywords">
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>add-to-cart-sauce-labs-backpack</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230910 16:09:18.245" level="INFO">Clicking button 'add-to-cart-sauce-labs-backpack'.</msg>
-<status status="PASS" starttime="20230910 16:09:18.245" endtime="20230910 16:09:18.310"/>
+<msg timestamp="20230910 16:28:18.756" level="INFO">Clicking button 'add-to-cart-sauce-labs-backpack'.</msg>
+<status status="PASS" starttime="20230910 16:28:18.756" endtime="20230910 16:28:18.828"/>
 </kw>
 <kw name="Click Button" library="SeleniumLibrary">
 <arg>add-to-cart-sauce-labs-onesie</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230910 16:09:18.310" level="INFO">Clicking button 'add-to-cart-sauce-labs-onesie'.</msg>
-<status status="PASS" starttime="20230910 16:09:18.310" endtime="20230910 16:09:18.365"/>
+<msg timestamp="20230910 16:28:18.828" level="INFO">Clicking button 'add-to-cart-sauce-labs-onesie'.</msg>
+<status status="PASS" starttime="20230910 16:28:18.828" endtime="20230910 16:28:18.880"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>Remove</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20230910 16:09:18.365" endtime="20230910 16:09:18.382"/>
+<status status="PASS" starttime="20230910 16:28:18.880" endtime="20230910 16:28:18.896"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230910 16:09:21.384" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20230910 16:09:18.382" endtime="20230910 16:09:21.384"/>
+<msg timestamp="20230910 16:28:21.903" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230910 16:28:18.896" endtime="20230910 16:28:21.903"/>
 </kw>
-<status status="PASS" starttime="20230910 16:09:18.245" endtime="20230910 16:09:21.384"/>
+<status status="PASS" starttime="20230910 16:28:18.756" endtime="20230910 16:28:21.903"/>
 </kw>
 <kw name="End Web Test" library="SauceDemo_Keywords" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230910 16:09:21.384" endtime="20230910 16:09:23.571"/>
+<status status="PASS" starttime="20230910 16:28:21.903" endtime="20230910 16:28:24.074"/>
 </kw>
-<status status="PASS" starttime="20230910 16:09:21.384" endtime="20230910 16:09:23.571"/>
+<status status="PASS" starttime="20230910 16:28:21.903" endtime="20230910 16:28:24.074"/>
 </kw>
-<status status="PASS" starttime="20230910 16:09:09.276" endtime="20230910 16:09:23.571"/>
+<status status="PASS" starttime="20230910 16:28:08.637" endtime="20230910 16:28:24.074"/>
+</test>
+<test id="s1-t3" name="User can add products to the Product" line="22">
+<kw name="Begin Testing" library="SauceDemo_Keywords" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230910 16:28:24.074" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20230910 16:28:24.074" endtime="20230910 16:28:25.589"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230910 16:28:25.590" endtime="20230910 16:28:25.711"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 16:28:28.717" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230910 16:28:25.713" endtime="20230910 16:28:28.717"/>
+</kw>
+<status status="PASS" starttime="20230910 16:28:24.074" endtime="20230910 16:28:28.717"/>
+</kw>
+<kw name="Login" library="SauceDemo_Keywords">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.saucedemo.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230910 16:28:28.717" level="INFO">Opening url 'https://www.saucedemo.com/'</msg>
+<status status="PASS" starttime="20230910 16:28:28.717" endtime="20230910 16:28:31.091"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>user-name</arg>
+<arg>standard_user</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230910 16:28:31.092" level="INFO">Typing text 'standard_user' into text field 'user-name'.</msg>
+<status status="PASS" starttime="20230910 16:28:31.092" endtime="20230910 16:28:31.214"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>password</arg>
+<arg>secret_sauce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230910 16:28:31.214" level="INFO">Typing text 'secret_sauce' into text field 'password'.</msg>
+<status status="PASS" starttime="20230910 16:28:31.214" endtime="20230910 16:28:31.301"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230910 16:28:31.301" level="INFO">Clicking element 'login-button'.</msg>
+<status status="PASS" starttime="20230910 16:28:31.301" endtime="20230910 16:28:31.394"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Swag Labs</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230910 16:28:31.395" endtime="20230910 16:28:31.413"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 16:28:34.429" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230910 16:28:31.414" endtime="20230910 16:28:34.429"/>
+</kw>
+<status status="PASS" starttime="20230910 16:28:28.717" endtime="20230910 16:28:34.429"/>
+</kw>
+<kw name="Add Product to Cart" library="Sauce2Demo_Keywords">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>add-to-cart-sauce-labs-backpack</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230910 16:28:34.429" level="INFO">Clicking button 'add-to-cart-sauce-labs-backpack'.</msg>
+<status status="PASS" starttime="20230910 16:28:34.429" endtime="20230910 16:28:34.498"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>add-to-cart-sauce-labs-bike-light</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230910 16:28:34.498" level="INFO">Clicking button 'add-to-cart-sauce-labs-bike-light'.</msg>
+<status status="PASS" starttime="20230910 16:28:34.498" endtime="20230910 16:28:34.558"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>add-to-cart-sauce-labs-bolt-t-shirt</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230910 16:28:34.558" level="INFO">Clicking button 'add-to-cart-sauce-labs-bolt-t-shirt'.</msg>
+<status status="PASS" starttime="20230910 16:28:34.558" endtime="20230910 16:28:34.604"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>add-to-cart-sauce-labs-fleece-jacket</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230910 16:28:34.604" level="INFO">Clicking button 'add-to-cart-sauce-labs-fleece-jacket'.</msg>
+<status status="PASS" starttime="20230910 16:28:34.604" endtime="20230910 16:28:34.673"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>add-to-cart-sauce-labs-onesie</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230910 16:28:34.673" level="INFO">Clicking button 'add-to-cart-sauce-labs-onesie'.</msg>
+<status status="PASS" starttime="20230910 16:28:34.673" endtime="20230910 16:28:34.723"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Remove</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230910 16:28:34.723" endtime="20230910 16:28:34.744"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230910 16:28:37.746" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230910 16:28:34.744" endtime="20230910 16:28:37.746"/>
+</kw>
+<status status="PASS" starttime="20230910 16:28:34.429" endtime="20230910 16:28:37.746"/>
+</kw>
+<kw name="End Web Test" library="SauceDemo_Keywords" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230910 16:28:37.746" endtime="20230910 16:28:39.917"/>
+</kw>
+<status status="PASS" starttime="20230910 16:28:37.746" endtime="20230910 16:28:39.917"/>
+</kw>
+<status status="PASS" starttime="20230910 16:28:24.074" endtime="20230910 16:28:39.917"/>
 </test>
 <kw name="Cleanup Testing Data" library="SauceDemo_Keywords" type="TEARDOWN">
 <kw name="Log" library="BuiltIn">
 <arg>This is suite tear-down</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230910 16:09:23.571" level="INFO">This is suite tear-down</msg>
-<status status="PASS" starttime="20230910 16:09:23.571" endtime="20230910 16:09:23.571"/>
+<msg timestamp="20230910 16:28:39.917" level="INFO">This is suite tear-down</msg>
+<status status="PASS" starttime="20230910 16:28:39.917" endtime="20230910 16:28:39.917"/>
 </kw>
-<status status="PASS" starttime="20230910 16:09:23.571" endtime="20230910 16:09:23.571"/>
+<status status="PASS" starttime="20230910 16:28:39.917" endtime="20230910 16:28:39.917"/>
 </kw>
-<status status="PASS" starttime="20230910 16:08:55.405" endtime="20230910 16:09:23.571"/>
+<status status="PASS" starttime="20230910 16:27:54.223" endtime="20230910 16:28:39.917"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="Saucedemo">Saucedemo</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="Saucedemo">Saucedemo</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20230910 16:28:24.074" level="WARN">Multiple tests with name 'User can add products to the Product' executed in suite 'Saucedemo'.</msg>
 </errors>
 </robot>
